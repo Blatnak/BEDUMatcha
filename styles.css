@@ -19,3 +19,6 @@ body {
     margin: 0;
     padding: 0;
 }
+:-ms-input-placeholder{
+    color: #46484c;
+}
