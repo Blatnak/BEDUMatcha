@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="styles.css">
         <!--Aquí va información importante pero no visible dentro del navegador-->
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
         <title>Matcha</title>
     </head>
     <body>
@@ -16,17 +18,17 @@
             <!--Menú de navegación-->
             <nav class="navbar">
                 <ul>
-                    <li>Platform</li>
-                    <li>Pricing</li>
-                    <li>Customers</li>
-                    <li>Resources</li>
-                    <li>About</li>
+                    <li class="menu-item">Platform</li>
+                    <li class="menu-item">Pricing</li>
+                    <li class="menu-item">Customers</li>
+                    <li class="menu-item">Resources</li>
+                    <li class="menu-item">About</li>
                 </ul>
             </nav>
             <!--Contenedor de acciones de usuario-->
             <div class="actions">
-                <a>Sign In</a>
-                <button>Start free trial</button>
+                <a class="signnav">Sign In</a>
+                <button class="navbutton">Start free trial</button>
             </div>
         </header>
     <main>
@@ -35,7 +37,7 @@
         <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog's impact on sales.</h4>
     <form class="signup-form">
         <input type="email" placeholder="Enter email adress">
-        <button type="Submit">
+        <button class="try" type="Submit">
             Try it now &rarr;
         </button>
     </form>
