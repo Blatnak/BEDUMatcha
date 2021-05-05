@@ -11,6 +11,13 @@
     height: 100%;
     line-height: 45px;
 }
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 li {
     display: inline;
 }
@@ -53,11 +60,22 @@ li {
     padding-top: 12px;
     padding-bottom: 12px;
 }
+main {
+    margin-top: 200px;
+    text-align: center;
+}
 h1 {
     color: #025157;
     text-align: center;
     font-family: "Orelega One", sans-serif;
     margin-bottom: 24px;
+    font-size: 60px;
+}
+.publish h3 {
+    font-family: "Orelega One", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
 }
 h4 {
     color: #46484c;
@@ -66,17 +84,31 @@ h4 {
     font-size: 20px;
     margin-bottom: 30px;
 }
+p.faded {
+    color: #8b8b8bcc
+}
+.publish > p {
+    color: #343434;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 p {
     color: #8b8b8bcc;
     text-align: center;
     margin-top: 15px;
 }
-form.signup-form{
+.publish > form {
+    display: flex;
+}
+form.signup-form {
     font-size: 14px;
     display: block;
 }
 input {
     height: 55px;
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
 }
 button.try {
     color: #fff;
@@ -84,6 +116,23 @@ button.try {
     text-align: center;
     height: 55px;
     margin-left: -10px;
+    border: 1px solid #b6b6b6;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explanatory-video img {
+    margin-top: 10px;
+}
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
 }
 figure {
     margin-top: 32px;
