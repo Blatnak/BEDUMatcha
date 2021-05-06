@@ -18,7 +18,7 @@
     right: 0;
     background-color: #fffbf7;
 }
-li {
+.navbar > a {
     display: inline;
 }
 .logo {
