@@ -136,6 +136,99 @@ button.try {
     margin: 100px auto;
     align-items: center;
 }
+.success-stories {
+    background-color: #a1d683;
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-around;
+}
+.overview > h2 {
+    color: #025157;
+    font-family: "Orelega One", "sans-sefif";
+    font-size: 45px;
+    line-height: 48px;
+    text-align: left;
+}
+.overview > p {
+    color: #343434;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.overview > button {
+    display: flex;
+    color: #fff;
+    background-color: #025157;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    height: 45px;
+    margin-left: 0;
+    align-items: flex-start;
+}
+.brands {
+    display: flex;
+    align-items: flex-start;
+}
+.stories-carousel {
+    background-color: #fffbf7;
+    display: block;
+    flex: 1;
+}
+.card-media {
+    position: relative;
+}
+.company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body {
+    padding: 25px;
+    flex: 1 1 auto;
+}
+.card-body > h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.card-body > h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.results {
+    display: flex;
+    align-items: center;
+}
+.card-footer > button {
+    display: block;
+    color: #fff;
+    background-color: #025157;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-left: 0;
+}
 figure {
     margin-top: 32px;
 }
