@@ -158,9 +158,66 @@ button.try {
 }
 .features {
     display: grid;
-    height: 660px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    background-color: #025157;
+    padding: 5% 10%;
+}
+.features > .feature-card {
+    margin: 0 15px 30px 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+.feature-content > figure {
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.feature-content > h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.feature-content > p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 25px;
+}
+.feature-content > a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.feature-image {
+    flex: 1;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    right: -50px;
+}
+.feature-image > figure {
+    margin-top: 0;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.feature-image > img {
+    margin-top: 0px;
+    height: 100%;
+    vertical-align: middle;
 }
 .success-stories {
     background-color: #a1d683;
@@ -279,7 +336,7 @@ figure {
 body {
     margin: 8px;
     background-color: #fffbf7;
-    text-align: center;
+    text-align: left;
     display: block;
     font-family: sans-serif;
 }
