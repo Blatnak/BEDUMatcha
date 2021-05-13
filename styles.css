@@ -30,6 +30,7 @@
     text-align: center;
     color:#025157;
     font-weight: 500;
+    z-index: 100;
 }
 .menu-item {
     display: inline;
@@ -139,6 +140,9 @@ button.try {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 10px;
+}
+figure.intro > img {
+    width: 70%;
 }
 .explanatory-video {
     display: flex;
@@ -440,4 +444,37 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/** Dispositivos moviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar, .actions {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        margin-top: 150px;
+    }
+
+    .banner >img {
+        width: 100%;
+    }
+}
+/** Dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/** Dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/**Dispositivos grandes (monitores grandes, tvs) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/**Dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+
 }
