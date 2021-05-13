@@ -17,6 +17,7 @@
     left: 0;
     right: 0;
     background-color: #fffbf7;
+    z-index: 10;
 }
 .navbar > a {
     display: inline;
