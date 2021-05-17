@@ -235,7 +235,7 @@ figure.intro > img {
 }
 .overview {
     padding-right: 100px;
-    display: block;
+    flex: 2;
 }
 .overview > h2 {
     color: #025157;
@@ -267,6 +267,10 @@ figure.intro > img {
 .brands {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 16px;
+}
+.brands > img {
+    max-width: 100%;
 }
 .stories-carousel {
     background-color: #fffbf7;
@@ -276,6 +280,10 @@ figure.intro > img {
 }
 .card-media {
     position: relative;
+}
+.card-media > figure > img {
+    width: 100%;
+    max-height: 16vw;
 }
 .company {
     position: absolute;
@@ -463,9 +471,180 @@ body {
     .banner >img {
         width: 100%;
     }
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .explanatory-video > video {
+        width: 100%
+    }
+    .publish {
+        margin-top: 10px;
+    }
+    .publish > h3 {
+        line-height: 1.2;
+        font-size: 25px;
+    }
+    .publish > form {
+        flex-direction: column;
+    }
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+    .publish > form > div > input {
+        width: 65%;  
+    }
+    .features {
+        grid-template: repeat(4,1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .feature-image {
+        display: none;
+    }
+    .success-stories {
+        flex-direction: column;
+        padding: 5px 15px;
+    }
+    .overview {
+        padding: unset;
+        max-width: 100%;
+    }
+    .success-stories > .overview > h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stories-carousel {
+        min-height: 832px;
+    }
+    .stories-carousel > .card-media > figure > img {
+        max-height: 100%; 
+    }
+    .how-does-it-work {
+        padding: 5% 15px;
+    }
+    .how-does-it-work > .title {
+        font-size: 28px;
+    }
+    .how-does-it-work > .description {
+        max-width: unset;
+    }
+    .how-does-it-work > .steps {
+        grid-template-columns: 1fr;
+    }
+    .how-does-it-work > .steps > .card-step {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-image {
+        position: initial;
+        height: unset;
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-body > h3 {
+        margin-top: 25px;
+        text-align: left;       
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-body > p {
+        line-height: 1.2;
+    }
 }
 /** Dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
+    .navbar, .actions {
+        display: none;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .publish {
+        margin-top: 10px;
+    }
+    .publish > h3 {
+        line-height: 1.2;
+        font-size: 30px;
+}
+    .features {
+        grid-template: repeat(4,1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+}
+    .success-stories > .overview > h2 {
+        font-size: 30px;
+        line-height: 30px;
+}
+    .success-stories > .overview > p {
+        font-size: 16px;
+}
+    .success-stories > .overview > button {
+        font-size: 12px;
+}
+    .stories-carousel {
+        min-height: 832px;
+}
+    .stories-carousel > .card-media > figure > img {
+        max-height: 100%; 
+}
+    .stories-carousel > .card-media > .company {
+        width: 40%;
+        height: 40%;
+}
+    .stories-carousel > .card-media > .company > img {
+        width: 80%;
+}
+    .stories-carousel > .card-body > h4 {
+        font-size: 15px;
+}
+    .stories-carousel > .card-body > h3 {
+        font-size: 20px;
+}
+    .stories-carousel > .card-footer > button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .how-does-it-work {
+        padding: 5% 15px;
+    }
+    .how-does-it-work > .title {
+        font-size: 30px;
+    }
+    .how-does-it-work > .description {
+        max-width: 80%;
+    }
+    .how-does-it-work > .steps {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .how-does-it-work > .steps > .card-step {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-image {
+        position: initial;
+        height: unset;
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-body > h3 {
+        margin-top: 25px;
+        text-align: left;       
+    }
+    .how-does-it-work > .steps > .card-step > .card-step-body > p {
+        line-height: 1.2;
+    }
 }
 /** Dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
