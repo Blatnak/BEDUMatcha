@@ -19,28 +19,35 @@
     background-color: #fffbf7;
     z-index: 10;
 }
+.navbar {
+    background-color: #fffbf7;
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
+}
 .navbar > a {
     display: inline;
 }
+.navbar-light .nav-item .nav-link {
+    color: #025157;
+  }
 .logo {
     width: 15%;
     height: 100%;
 }
 .navbar {
-    width: 70%;
     text-align: center;
     color:#025157;
     font-weight: 500;
     z-index: 100;
 }
 .menu-item {
-    display: inline;
+    color:#025157;
     margin-right: 25px; 
     margin-left: 25px;
     text-decoration: none;
 }
 .actions {
-    width: 15%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -297,6 +304,9 @@ figure.intro > img {
     justify-content: center;
     align-items: center;
 }
+.company > img {
+    max-width: 75%;
+}
 .card-body {
     padding: 25px;
     flex: 1;
@@ -344,6 +354,22 @@ figure.intro > img {
     padding: 12px 20px;
     width: 100%;
     margin-left: 0;
+}
+.success-stories  .stories-carousel  .carousel-indicators {
+    position: unset;
+}
+.success-stories > .stories-carousel > .card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-media > figure {
+    margin-top: 0;
+}
+.card-footer {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-color: transparent;
 }
 .how-does-it-work {
     background-color: #fffbf7;
@@ -456,9 +482,14 @@ body {
 }
 /** Dispositivos moviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar, .actions {
-        display: none;
-    }
+
+    .navbar-light .nav-item .nav-link {
+        color: #025157;
+      }
+
+    .navbar-light .navbar-toggler {
+        border-color: #025157;
+      }
 
     h1 {
         font-size: 30px;
@@ -556,9 +587,6 @@ body {
 }
 /** Dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .navbar, .actions {
-        display: none;
-    }
     h1 {
         font-size: 45px;
     }
@@ -648,9 +676,6 @@ body {
 }
 /** Dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-    .navbar, .actions {
-        display: none;
-    }
     h1 {
         font-size: 45px;
     }
@@ -715,12 +740,6 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
     .logo {
         width: 15%;
-    }
-    .actions {
-        width: 25%;
-    }
-    .navbar {
-        width: 60%;
     }
     .promo {
         width: 80%;
