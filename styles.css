@@ -371,6 +371,17 @@ figure.intro > img {
     background-color: transparent;
     border-color: transparent;
 }
+ol.carousel-indicators li {
+    background-color: #025157;
+    width: 30px;
+    height: 5px;
+    margin-right: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+ol.carousel-indicators li.active {
+    opacity: .5;
+}
 .how-does-it-work {
     background-color: #fffbf7;
     padding: 5% 10%;
