@@ -1,0 +1,163 @@
+/* _globasl.scss */
+/* Colores */
+/* Fuentes */
+/* Placeholders */
+.blog .title {
+  font-family: "Orelega One", sans-serif;
+  color: #135359;
+}
+
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .card-title {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+.blog .metadata {
+  text-align: left;
+}
+.blog .metadata .category {
+  color: #67b54b;
+}
+.blog .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+.blog .card-text .read-more a {
+  text-decoration: underline;
+}
+.blog .author img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.blog .author p {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+  text-align: left;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  background-color: #025157;
+  color: #ffffff;
+  border: none;
+}
+
+.home-people {
+  background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/img/home_people.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  height: 350px;
+}
+
+.try-it {
+  padding: 5% 5% 2%;
+  background-color: #96d178;
+  margin-top: -30px;
+}
+.try-it h2 {
+  color: #025157;
+  font-family: "Orelega One", sans-serif;
+  font-size: 60px;
+}
+.try-it form {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.try-it form input, .try-it form button {
+  height: 100%;
+  border-radius: 8px;
+}
+.try-it form button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.try-it p {
+  color: #ffffff;
+}
+
+.cta {
+  padding: 5% 10% 0;
+  margin: 0;
+  max-width: unset;
+}
+.cta .box {
+  background-color: #025157;
+  color: #ffffff;
+  padding: 5%;
+  border-radius: 10px;
+}
+.cta .box h2 {
+  font-family: "Orelega One", sans-serif;
+  font-size: 34px;
+  max-width: 340px;
+  line-height: 1.3;
+}
+.cta .box p {
+  color: #ffffff;
+  margin-top: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: left;
+}
+.cta .box p a {
+  color: #67b54b;
+}
+.cta .box form input {
+  vertical-align: middle;
+}
+.cta .box form button {
+  vertical-align: middle;
+  background-color: #67b54b;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.cta .box form + p {
+  color: #b3cbdc;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+/*# sourceMappingURL=output.css.map */
